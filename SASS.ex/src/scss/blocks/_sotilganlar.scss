@@ -1,0 +1,70 @@
+.sotilganlar{
+    height: auto;
+}
+@media only screen and (max-width:1010px) {
+    .sotilganlar{
+        &__cards{
+            justify-content: space-between;
+            &--card{
+                width: 30%;
+                height: 440px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .sotilganlar{
+        &__cards{
+            justify-content: space-between;
+            &--card{
+                width: 45%;
+                height: 510px;
+            }
+        }
+    &__next, &__prev{
+        display: none;
+    }
+    }
+}
+@media only screen and (max-width:600px) {
+    .sotilganlar{
+        overflow: hidden;
+        width: 100%;
+        padding: 5px;
+        &__prev{
+            left: 10px;
+            background: #506267;
+            border-radius: 50%;
+        }
+        &__next{
+            right: 0px;
+            background: #506267;
+            border-radius: 50%;
+        }
+        &__cards{
+            width: 3000px;
+            display: flex;
+            padding-left: 36px;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            column-gap: 13px;
+            justify-content: space-between;
+            transition: all 1s ease;
+            &--card{
+                width: 12%;
+                height: 510px;
+            }
+        }
+        &__next, &__prev{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .sotilganlar{
+        &__cards{
+            width: 3000px;
+        }
+    }
+}

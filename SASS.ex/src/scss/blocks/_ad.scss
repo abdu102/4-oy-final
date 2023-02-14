@@ -1,0 +1,16 @@
+.ad{
+    &__prev{
+        background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    }
+    &__next{
+        background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    }
+}
+.ad{
+    &__second--prev{
+        background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    }
+    &__second--next{
+        background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    }
+}

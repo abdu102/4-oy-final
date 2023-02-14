@@ -1,0 +1,45 @@
+
+@media screen and (max-width:992px){
+    .kategorialar{
+        height: auto;
+        gap: 15px;
+        &__cards{
+            height: 100%;
+            gap: 30px;
+            
+            &--card{
+                width: 30%;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .kategorialar{
+        height: auto;
+        gap: 15px;
+        &__cards{
+            height: 95%;
+            gap: 30px;
+            
+            &--card{
+                width: 46%;
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .kategorialar{
+        height: auto;
+        gap: 15px;
+        &__cards{
+            height: 100%;
+            gap: 30px;
+            
+            &--card{
+                width: 45%;
+            }
+        }
+    }
+}

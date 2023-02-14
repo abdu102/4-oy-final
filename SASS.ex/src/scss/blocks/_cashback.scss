@@ -1,0 +1,95 @@
+.cashback{
+    &__next, &__prev{
+        background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        border-radius: 23px;
+    }
+    .cashback__lists{
+        width: 5900px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &--list{
+            width: 1030px !important;
+            height: 80%;
+            margin-left: 60px;
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .cashback{
+        .cashback__lists{
+            width: 3300px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            &--list{
+                width: 800px !important;
+                height: 80%;
+                margin-left: 60px;
+                & img{
+                    display: none;
+                }
+                &-text{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .cashback{
+        .cashback__lists{
+            width: 2900px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            &--list{
+                width: 800px !important;
+                height: 80%;
+                margin-left: 50px;
+                & img{
+                    display: none;
+                }
+                &-text{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .cashback{
+        .cashback__lists{
+            width: 2700px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            &--list{
+                width: 430px !important;
+                height: 80%;
+                margin-left: 45px;
+                padding-top: 20px;
+                & img{
+                    display: none;
+                }
+                &-text{
+                    width: 90%;
+                    padding: 10px;
+                    & h2{
+                        width: 80%;
+                        font-size: 33px;
+                    }
+                }
+            }
+        }
+    }
+}

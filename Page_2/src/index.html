@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtihon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- box icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+      <header class="fixed w-[100%] top-0 bg-white h-[94px] z-40">
+        <div class="container">
+            <nav class="nav flex justify-between items-center pt-3">
+                <button class="nav__menu md:hidden">
+                    <i class="fa-solid fa-bars font-bold"></i>
+                </button>
+                <div class="nav__logo">
+                   <a href="#"><img src="./img/nav__logo.svg" alt="LOGO"></a>
+                </div>
+                <button class="nav__btn w-[149px] h-[46px] flex justify-around items-center rounded-[8px] shadow-md shadow-[rgba(0, 0, 0, 0.25]">
+                    <i class="fa-solid fa-bars text-white font-bold"></i>
+                    <strong class="text-white font-bold">KATALOG</strong>
+                </button>
+
+                   <label for="#" class="flex justify-between items-center w-[22%] nav__label">
+                    <input type="text" placeholder="Maxsulotlarni izlash" class="nav__form--inp w-[80%] h-[39px] pl-4 focus:outline-none focus:outline-blue-600 rounded-bl-[8px] rounded-tl-[8px] border-solid border-[1px] border-[#E4E7EE]">
+                    <button class="rounded-br-[8px] rounded-tr-[8px] text-white bg-[#0D63F3] hover:bg-[#2f66c5] w-[20%] h-[46px]"><i class="fa-solid fa-magnifying-glass"></i></button>
+                   </label>
+
+                <ul class="nav__icons w-[25%] lg:flex justify-between items-center">
+                    <li class="nav__icons--icon w-[46px] h-[46px] text-center py-3 bg-[#ECF4FF] rounded-[8px]"><i class="fa-regular fa-heart"></i></li>
+                    <li class="nav__icons--icon w-[46px] h-[46px] text-center py-3 bg-[#ECF4FF] rounded-[8px] pl-3"><img src="./img/shop.svg" alt=""></li>
+                    <li class="nav__icons--icon"> <button class="nav__icons--icon-btn w-[148px] h-[45px] rounded-[10px] mr-5">Kirish</button></li>
+                </ul>
+                <div class="nav__toggle w-[80vw] hidden h-[100vh] bg-white duration-[2s]">
+                    <div class="nav__toggle--main h-[50%] flex flex-col justify-between pl-8">
+                        <span class="nav__toggle--main-top w-[100%] flex items-cente flex-col items-end justify-between pr-5 text-[19px] gap-y-8">
+                            <i class="fa-solid fa-xmark nav__toggle-main-top-btn"></i>
+                            <button class="nav__icons--icon-btn w-[90%] h-[45px] rounded-[10px] mr-5">Hisobga kirish</button>
+                        </span> 
+                        <form action="#">
+                            <input type="radio" id="Ozbekcha" name="lang" checked>
+                            <label for="Ozbekcha" >Ozbekcha</label><br>
+                           <input type="radio" id="Ruscha" name="lang">
+                           <label for="Ruscha">Ruscha</label>
+    
+                        </form>
+                        <ul class="nav__toggle--main-ul pl-6 h-[200px] flex justify-between flex-col">
+                            <li class="nav__toggle--main-ul-list ml-[-10px]">Bo’limlar</li>
+                            <li class="nav__toggle--main-ul-list flex justify-between"><a href="#" class="hover:translate-x-5 duration-200">Kategoriyalar</a>
+                            <i class="fa-regular fa-angle-right"></i>
+                        </li>
+                            <li class="nav__toggle--main-ul-list flex justify-between"><a href="#" class="hover:translate-x-5 duration-200">Mahsulotlar katalogi</a>
+                            <i class="fa-regular fa-angle-right"></i>
+                        </li>
+                            <li class="nav__toggle--main-ul-list flex justify-between"><a href="#" class="hover:translate-x-5 duration-200">Xizmatlarimiz</a>
+                            <i class="fa-regular fa-angle-right"></i>
+                        </li>
+                            <li class="nav__toggle--main-ul-list flex"><a href="#" class="hover:translate-x-5 duration-200">Nasiya savdo</a></li>
+
+                            <li class="nav__toggle--main-ul-list flex"><a href="#" class="hover:translate-x-5 duration-200">Biz xaqimizda</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__toggle--bottom h-[20%] mt-[90%] pl-5">
+                        <h4>Axbarot xizmati</h4>
+                        <div class="nav__toggle--bottom-links flex flex-col justify-between">
+                            <a href="mailto:contact.@nextstore.uz" class="text-[#0D63F3]">contact.@nextstore.uz</a>
+                            <a href="tel:+998 95 503 09 09" class="text-[#0D63F3]">+998 95 503 09 09</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+      </header>
+
+      <main class="bg-[#ECF4FF]">
+        <!-- Mobile search -->
+        <section>
+            <div class="container">
+                <div class="search mt-[140px] h-[100px] pt-[50px] pl-6">
+                    <label for="#" class="main__label flex justify-between items-center w-[92%]">
+                        <input type="text" placeholder="Maxsulotlarni izlash" class="nav__form--inp w-[80%] h-[60px] pl-4 focus:outline-none focus:outline-blue-600 rounded-bl-[8px] rounded-tl-[8px] border-solid border-[1px] border-[#E4E7EE]">
+                        <button class="rounded-br-[8px] rounded-tr-[8px] text-white bg-[#0D63F3] hover:bg-[#2f66c5] w-[20%] h-[60px]"><i class="fa-solid fa-magnifying-glass"></i></button>
+                       </label>
+                </div>
+            </div>
+        </section>
+        <!-- cashback slider -->
+         <section>
+               <div class="container">
+                <div class="cashback px-2 md:mt-[70px] mt-0 mx-auto h-[400px] relative overflow-hidden">
+                    <span class="cashback__prev absolute top-[38%] w-[42px] h-[42px] left-0 text-center pt-2 z-20 text-white rounded-[50%] active:bg-[#46575b]">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <div class="cashback__lists h-[85%] duration-700">
+                        <div class="cashback__lists--list flex justify-around items-start bg-[rgba(56,162,54,255)] rounded-[12px]">
+                            <div class="cashback__lists--list-text flex justify-between flex-col gap-y-4 h-[54%] w-[38%] pt-9">
+                                <h2 class="text-white text-[42px] font-bold">Mahsulot narxidan 1% qaytaramiz</h2>
+                                <p class="text-slate-50 text-[22px]">alif nasiya aorqali muddatli tolov uchun 1% keshbek</p>
+                            </div>
+                            <img src="./img/cashback__img.jpg" alt="" class="lg:block hidden">
+                        </div>
+                        
+                        <div class="cashback__lists--list flex justify-around items-start bg-[rgba(56,162,54,255)] rounded-[8px]">
+                            <div class="cashback__lists--list-text flex justify-between flex-col gap-y-4 h-[54%] w-[38%] pt-9">
+                                <h2 class="text-white text-[42px] font-bold">Mahsulot narxidan 1% qaytaramiz</h2>
+                                <p class="text-slate-50 text-[22px]">alif nasiya aorqali muddatli tolov uchun 1% keshbek</p>
+                            </div>
+                            <img src="./img/cashback__img.jpg" alt="" class="lg:block hidden">
+                        </div>
+
+                        <div class="cashback__lists--list  flex justify-around items-start bg-[rgba(56,162,54,255)] rounded-[8px]">
+                            <div class="cashback__lists--list-text flex justify-between flex-col gap-y-4 h-[54%] w-[38%] pt-9">
+                                <h2 class="text-white text-[42px] font-bold">Mahsulot narxidan 1% qaytaramiz</h2>
+                                <p class="text-slate-50 text-[22px]">alif nasiya aorqali muddatli tolov uchun 1% keshbek</p>
+                            </div>
+                            <img src="./img/cashback__img.jpg" alt="" class="lg:block hidden">
+                        </div>
+
+                        <div class="cashback__lists--list flex justify-around items-start bg-[rgba(56,162,54,255)] rounded-[8px]">
+                            <div class="cashback__lists--list-text flex justify-between flex-col gap-y-4 h-[54%] w-[38%] pt-9">
+                                <h2 class="text-white text-[42px] font-bold">Mahsulot narxidan 1% qaytaramiz</h2>
+                                <p class="text-slate-50 text-[22px]">alif nasiya aorqali muddatli tolov uchun 1% keshbek</p>
+                            </div>
+                            <img src="./img/cashback__img.jpg" alt="" class="lg:block hidden">
+                        </div>
+
+                        <div class="cashback__lists--list flex justify-around items-start bg-[rgba(56,162,54,255)] rounded-[8px]">
+                            <div class="cashback__lists--list-text flex justify-between flex-col gap-y-4 h-[54%] w-[38%] pt-9">
+                                <h2 class="text-white text-[42px] font-bold">Mahsulot narxidan 1% qaytaramiz</h2>
+                                <p class="text-slate-50 text-[22px]">alif nasiya aorqali muddatli tolov uchun 1% keshbek</p>
+                            </div>
+                            <img src="./img/cashback__img.jpg" alt="" class="lg:block hidden">
+                        </div>
+                    </div>
+                    <span class="cashback__next absolute top-[38%] w-[42px] h-[42px] right-0 text-center pt-2 text-white rounded-[50%] active:bg-[#46575b]">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+               </div>
+
+        </section>
+        <!-- Kategorialar -->
+        <section>
+            <div class="container">
+                <div class="kategorialar h-[auto] flex flex-col items-center justify-between">
+                    <div class="kategorialar__title pl-4 w-[100%]">
+                        <h2 class="text-[32px]">Kategoriyalar</h2>
+                    </div>
+                    <div class="kategorialar__cards flex flex-wrap">
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img1.png" alt="">
+                            </picture>
+                            <strong>
+                                Smartfonlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img2.png" alt="">
+                            </picture>
+                            <strong>
+                                Kompyuterlar va noteboklar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img3.png" alt="">
+                            </picture>
+                            <strong>
+                                Televizorlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img4.png" alt="">
+                            </picture>
+                            <strong>
+                                Aqlli soatlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img5.png" alt="">
+                            </picture>
+                            <strong>
+                                Quloqchinlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img6.png" alt="">
+                            </picture>
+                            <strong>
+                                Konditsioner
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img7.png" alt="">
+                            </picture>
+                            <strong>
+                                Sovutkichlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img8.png" alt="">
+                            </picture>
+                            <strong>
+                                Kir yuvish  text-centermashinalari
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src=".//img/kateg__img9.png" alt="">
+                            </picture>
+                            <strong>
+                                Smartfonlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img10.png" alt="">
+                            </picture>
+                            <strong>
+                                Kompyuterlar va noteboklar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img11.png" alt="">
+                            </picture>
+                            <strong>
+                                Televizorlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img12.png" alt="">
+                            </picture>
+                            <strong>
+                                Aqlli soatlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img13.png" alt="">
+                            </picture>
+                            <strong>
+                                Quloqchinlar
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        <div class="kategorialar__cards--card flex flex-col md:w-[22%] bg-white h-[100%] py-3 md:m-4 m-2 px-2 hover:scale-110 duration-200 text-center w-[40%]">
+                            <picture>
+                                <img src="./img/kateg__img2.png" alt="">
+                            </picture>
+                            <strong>
+                                Konditsioner
+                            </strong>
+                            <small>212 ta maxsulot</small>
+                        </div>
+                        
+                    </div>
+                    <button class="w-[99%] text-[18px] h-[50px] text-center bg-white">Batafsil</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kop sotilganlar -->
+        <section>
+            <div class="container">
+                <div class="sotilganlar h-auto gap-y-5 relative flex justify-between flex-col">
+                    <div class="sotilgan__title text-[35px] py-5">
+                        <h3>Eng ko’p sotilgan</h3>
+                    </div>
+                    <span class="sotilganlar__prev absolute top-[50%] sm:hidden w-[42px] h-[42px] left-0 text-center pt-2 z-20 text-white">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <div class="sotilganlar__cards w-[100%] flex flex-wrap justify-between gap-y-[20px]">
+                        <div class="sotilganlar__cards--card flex justify-between flex-col lg:w-[19%] h-[440px] p-3 bg-white">
+
+                            <img src="./img/airpods.png" alt="">
+                            <div class="sotilganlar__cards--card-text ">
+                                <h5 class="text-[#0D63F3] text-[22px]">299 000 so’m</h5>
+                                <p>Apple Airpods Pro 
+                                    </p>
+                            </div>
+                            <small>1230 ta buyurtma</small>
+                            <span class="flex justify-between w-[100%] items-center px-2 rounded-[10px]">
+                                <button class="w-[55%] h-[40px] bg-[#0D63F3] text-white font-bold rounded-[8px]">Sotib olish</button>
+                                <a href="#"><img src="./img/shop.svg" alt=""></a>
+                            </span>
+                        </div>
+                        <div class="sotilganlar__cards--card relative flex justify-between flex-col lg:w-[19%] h-[440px]  p-3 bg-white">
+                            <img src="./img/kateg__img2.png" alt="">
+                            <div class="sotilganlar__cards--card-text h-[10%]">
+                                <h5 class="text-[#0D63F3] text-[22px]">16 114 285 so'm</h5>
+                                <p>Apple Macbook Pro 
+                                    </p>
+                            </div>
+                            <small>876 ta buyurtma</small>
+                            <span class="flex justify-between w-[100%] items-center px-2 rounded-[10px]">
+                                <button class="w-[55%] h-[40px] bg-[#0D63F3] text-white font-bold rounded-[8px]">Sotib olish</button>
+                                <a href="#"><img src="./img/shop.svg" alt=""></a>
+                            </span>
+                            <button class="absolute top-[5px] left-[5px] bg-red-600 text-white text-center w-[81px] h-[30px] rounded-[4px] pt-[2px] font-bold">Top Sale</button>
+                        </div>
+                        <div class="sotilganlar__cards--card flex justify-between flex-col lg:w-[19%] h-[440px] relative p-3 bg-white">
+
+                            <img src="./img/apple__watch.png" alt="">
+                            <div class="sotilganlar__cards--card-text">
+                                <h5 class="text-[#0D63F3] text-[22px]">1 340 000 so’m</h5>
+                                <p>Robot - tozalagich Xiaomi 
+                                    Mi Robot</p>
+                            </div>
+                            <small>876 ta buyurtma</small>
+                            <span class="flex justify-between w-[100%] items-center px-2 rounded-[10px]">
+                                <button class="w-[55%] h-[40px] bg-[#0D63F3] text-white font-bold rounded-[8px]">Sotib olish</button>
+                                <a href="#"><img src="./img/shop.svg" alt=""></a>
+                            </span>
+                            <button class="absolute top-[5px] left-[5px] bg-[#EB8528] text-white text-center w-[81px] h-[30px] rounded-[4px] pt-[2px] font-bold">Yangiglik</button>
+                        </div>
+                        <div class="sotilganlar__cards--card flex justify-between flex-col lg:w-[19%] h-[440px]  p-3 bg-white">
+
+                            <img src="./img/Roboox.png" alt="">
+                            <div class="sotilganlar__cards--card-text">
+                                <h5 class="text-[#0D63F3] text-[22px]">1 345 000 so’m</h5>
+                                <p>Oynali Fotoaparat
+                                    Canon EOS 6D Body</p>
+                            </div>
+                            <small>876 ta buyurtma</small>
+                            <span class="flex justify-between w-[100%] items-center px-2 rounded-[10px]">
+                                <button class="w-[55%] h-[40px] bg-[#0D63F3] text-white font-bold rounded-[8px]">Sotib olish</button>
+                                <a href="#"><img src="./img/shop.svg" alt=""></a>
+                            </span>
+                        </div>
+                        <div class="sotilganlar__cards--card relative flex justify-between flex-col lg:w-[19%] h-[440px]  p-3 bg-white">
+
+                            <img src="./img/camera.png" alt="">
+                            <div class="sotilganlar__cards--card-text">
+                                <h5 class="text-[#0D63F3] text-[22px]">16 114 285 so'm</h5>
+                                <p>Apple Macbook Pro 
+                                    13" 2.4 2019 Intel core i5  </p>
+                            </div>
+                            <small>876 ta buyurtma</small>
+                            <span class="flex justify-between w-[100%] items-center px-2 rounded-[10px]">
+                                <button class="w-[55%] h-[40px] bg-[#0D63F3] text-white font-bold rounded-[8px]">Sotib olish</button>
+                                <a href="#"><img src="./img/shop.svg" alt=""></a>
+                            </span>
+                            <button class="absolute top-[5px] left-[5px] bg-[#EB8528] text-white text-center w-[81px] h-[30px] rounded-[4px] pt-[2px] font-bold">Yangiglik</button>
+                        </div>
+                        
+                       
+                    </div>
+                    <span class="sotilganlar__next absolute top-[50%] sm:hidden w-[42px] h-[42px] right-0 text-center pt-2 text-white">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <button class="w-[99%] text-[18px] h-[50px] text-center bg-white">Koproq korish</button>
+                </div>
+            </div>
+        </section>
+       
+      </main>
+      <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__cols pt-8 w-[100%] flex justify-between">
+                    <ul class="footer__cols--col flex justify-around flex-col gap-y-4">
+                        <li class="footer__cols--col-item font-bold">Hujjatlar</li>
+                        <li class="footer__cols--col-item"><a href="#">Umumiy shartlar</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Ofertalar arxivi</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Nizom</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Guvohnoma</a></li>
+                    </ul>
+                    <ul class="footer__cols--col flex justify-around flex-col gap-y-2">
+                        <li class="footer__cols--col-item font-bold">Servis</li>
+                        <li class="footer__cols--col-item"><a href="#">Do’konlar</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Biz haqimizda</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Hamkorlik uchun</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Qaytarish</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Promokodlar</a></li>
+                    </ul>
+                    <ul class="footer__cols--col flex justify-around flex-col gap-y-5">
+                        <li class="footer__cols--col-item font-bold">Mahsulotlar katalogi</li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 1</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 2</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 3</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 4</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 5</a></li>
+                        <li class="footer__cols--col-item"><a href="#">Katalog 6</a></li>
+                    </ul>
+                    <ul class="footer__cols--col flex justify-around flex-col">
+                        <li class="footer__cols--ul-list font-bold"><strong>Axbarot xizmati</strong></li>
+                        <li class="footer__cols--ul-list">
+                            <p>contact.@nextstore.uz</p>
+                        </li>
+                        <li class="footer__cols--ul-list">
+                            <p>+998 97 712 96 96  
+                                +998 95 503 09 09</p></li>
+
+                        <li class="footer__cols--ul-list">
+                            <p>Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston</p></li>
+                       
+                        <li class="footer__cols--ul-list footer__cols--ul-list-links">
+                            <div class="footer__cols--ul-list-links-icons flex justify-around p-3">
+                                <a href=""><img src="./img/facebook.svg" alt=""></a>
+                                <a href=""><img src="./img/in.svg" alt=""></a>
+                                <a href=""><img src="./img/telegram.svg" alt=""></a>
+                                <a href=""><img src="./img/tik-tok.svg" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom w-[100%] flex justify-between border-t-2 border-[rgba(77, 94, 246, 1)] mt-2 items-center py-6">
+                    <p>2022  Nextstore.com</p>
+                    <p>Powered by </p>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
